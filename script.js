@@ -17,7 +17,7 @@ scene.add(map);
 const ambientLight = new THREE.AmbientLight(undefined, 0.6);
 scene.add(ambientLight);
 
-const dirLight = directionallight();
+const dirLight = directionalLight();
 dirLight.target = player;
 player.add(dirLight);
 
