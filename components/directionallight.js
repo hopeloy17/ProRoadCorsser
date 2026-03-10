@@ -1,6 +1,6 @@
 import * as THREE from "three";
 
-export function directionalLight() {
+export function directionallight() {
   const dirLight = new THREE.DirectionalLight(undefined, 0.8);
   dirLight.position.set(-100, -100, 200);
   dirLight.up.set(0, 0, 1);
