@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { Renderer } from "./components/renderer.js";
 import { Camera } from "./components/camera.js";
-import { directionalLight } from "./components/directionallight.js";
+import { directionalLight } from "./components/directionalLight.js";
 import { player, initializePlayer} from "./components/player.js";
 import { map, initializeMap } from "./components/map.js";
 import { animateVehicles } from "./components/animateVehicles.js";
