@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { Renderer } from "./components/renderer.js";
 import { Camera } from "./components/camera.js";
-import { DirectionalLight } from "./components/directionalLight.js";
+import { directionalLight } from "./components/directionalLight.js";
 import { player, initializePlayer} from "./components/player.js";
 import { map, initializeMap } from "./components/map.js";
 import { animateVehicles } from "./components/animateVehicles.js";
@@ -17,7 +17,7 @@ scene.add(map);
 const ambientLight = new THREE.AmbientLight(undefined, 0.6);
 scene.add(ambientLight);
 
-const dirLight = DirectionalLight();
+const dirLight = directionalLight();
 dirLight.target = player;
 player.add(dirLight);
 
